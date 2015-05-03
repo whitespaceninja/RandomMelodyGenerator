@@ -3,3 +3,7 @@ c:\users\katherine\documents\visual studio 2013\Projects\RandomSongGenerator\Ran
 c:\users\katherine\documents\visual studio 2013\Projects\RandomSongGenerator\RandomSongGenerator\obj\Debug\RandomSongGenerator.Form1.resources
 c:\users\katherine\documents\visual studio 2013\Projects\RandomSongGenerator\RandomSongGenerator\obj\Debug\RandomSongGenerator.Properties.Resources.resources
 c:\users\katherine\documents\visual studio 2013\Projects\RandomSongGenerator\RandomSongGenerator\obj\Debug\RandomSongGenerator.csproj.GenerateResource.Cache
+C:\Users\Katherine\Documents\Visual Studio 2013\Projects\RandomSongGenerator\RandomSongGenerator\bin\Debug\RandomSongGenerator.exe
+C:\Users\Katherine\Documents\Visual Studio 2013\Projects\RandomSongGenerator\RandomSongGenerator\bin\Debug\RandomSongGenerator.pdb
+C:\Users\Katherine\Documents\Visual Studio 2013\Projects\RandomSongGenerator\RandomSongGenerator\obj\Debug\RandomSongGenerator.exe
+C:\Users\Katherine\Documents\Visual Studio 2013\Projects\RandomSongGenerator\RandomSongGenerator\obj\Debug\RandomSongGenerator.pdb

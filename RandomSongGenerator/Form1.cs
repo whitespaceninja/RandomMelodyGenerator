@@ -12,10 +12,13 @@ using System.Media;
 
 
 
+
 namespace RandomSongGenerator
 {
     public partial class Form1 : Form
     {
+        MelodyGenerator melodyGenerator = new MelodyGenerator();
+        
         public Form1()
         {
             InitializeComponent();
@@ -26,15 +29,21 @@ namespace RandomSongGenerator
 
         }
 
+        
         private void PlayButton_Click(object sender, EventArgs e)
         {
+
+            melodyGenerator.Notemaker();
+            
+            
+            /*
             //gotta add something for a test cmmit. 
             var p1 = new System.Media.Windows.MediaPlayer();
             p1.Open(new System.Uri(@"C:\windows\media\tada.wav"));
             p1.Play();
 
             // this sleep is here just so you can distinguish the two sounds playing simultaneously
-            System.Threading.Thread.Sleep(500);
+            //System.Threading.Thread.Sleep(500);
 
             var p2 = new System.Windows.Media.MediaPlayer();
             p2.Open(new System.Uri(@"C:\windows\media\tada.wav"));
@@ -43,7 +52,7 @@ namespace RandomSongGenerator
             new System.Threading.Thread(() =>
             {
                 var c = new System.Windows.Media.MediaPlayer();
-                c.Open(new System.Uri(@"C:\windows\media\tada.wav"));
+                c.Open(new System.Uri(@"C:\users\katherine\desktop\solo.wav"));
                 c.Play();
             }).Start();
 
@@ -52,9 +61,10 @@ namespace RandomSongGenerator
             new System.Threading.Thread(() =>
             {
                 var c = new System.Windows.Media.MediaPlayer();
-                c.Open(new System.Uri(@"C:\windows\media\tada.wav"));
+                c.Open(new System.Uri(@"C:\users\katherine\desktop\solo.wav"));
                 c.Play();
             }).Start();
+             */ 
         }
 
         
