@@ -7,3 +7,12 @@ C:\Users\Katherine\Documents\Visual Studio 2013\Projects\RandomSongGenerator\Ran
 C:\Users\Katherine\Documents\Visual Studio 2013\Projects\RandomSongGenerator\RandomSongGenerator\bin\Debug\RandomSongGenerator.pdb
 C:\Users\Katherine\Documents\Visual Studio 2013\Projects\RandomSongGenerator\RandomSongGenerator\obj\Debug\RandomSongGenerator.exe
 C:\Users\Katherine\Documents\Visual Studio 2013\Projects\RandomSongGenerator\RandomSongGenerator\obj\Debug\RandomSongGenerator.pdb
+C:\code_repo\RandomMelodyGenerator\RandomSongGenerator\bin\Debug\RandomSongGenerator.exe.config
+C:\code_repo\RandomMelodyGenerator\RandomSongGenerator\obj\Debug\RandomSongGenerator.exe
+C:\code_repo\RandomMelodyGenerator\RandomSongGenerator\obj\Debug\RandomSongGenerator.pdb
+C:\code_repo\RandomMelodyGenerator\RandomSongGenerator\bin\Debug\RandomSongGenerator.exe
+C:\code_repo\RandomMelodyGenerator\RandomSongGenerator\bin\Debug\RandomSongGenerator.pdb
+C:\code_repo\RandomMelodyGenerator\RandomSongGenerator\obj\Debug\RandomSongGenerator.csprojResolveAssemblyReference.cache
+C:\code_repo\RandomMelodyGenerator\RandomSongGenerator\obj\Debug\RandomSongGenerator.Properties.Resources.resources
+C:\code_repo\RandomMelodyGenerator\RandomSongGenerator\obj\Debug\RandomSongGenerator.csproj.GenerateResource.Cache
+C:\code_repo\RandomMelodyGenerator\RandomSongGenerator\obj\Debug\RandomSongGenerator.MainForm.resources

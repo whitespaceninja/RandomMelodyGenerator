@@ -10,81 +10,66 @@ namespace RandomSongGenerator
 {
     class MelodyGenerator
     {
-        public void Notemaker()
-        {
-            // Declare the first few notes of the song, "Mary Had A Little Lamb".
-            Note[] Mary = 
-        {
-        new Note(Tone.B, Duration.QUARTER),
-        new Note(Tone.A, Duration.QUARTER),
-        new Note(Tone.GbelowC, Duration.QUARTER),
-        new Note(Tone.A, Duration.QUARTER),
-        new Note(Tone.B, Duration.QUARTER),
-        new Note(Tone.B, Duration.QUARTER),
-        new Note(Tone.B, Duration.HALF),
-        new Note(Tone.A, Duration.QUARTER),
-        new Note(Tone.A, Duration.QUARTER),
-        new Note(Tone.A, Duration.HALF),
-        new Note(Tone.B, Duration.QUARTER),
-        new Note(Tone.D, Duration.QUARTER),
-        new Note(Tone.D, Duration.HALF)
-        };
-            // Play the song
-            Play(Mary);
-        }
+        Random rand = new Random();
 
-        // Play the notes in a song. 
-        protected static void Play(Note[] tune)
+        /// <summary>
+        /// Gets a random Tone, including REST. All Tones are equally likely to be returned.
+        /// </summary>
+        public Tone GetRandomTone()
         {
-            foreach (Note n in tune)
+            int toneRand = rand.Next(0, 14);
+            Tone tone = Tone.REST;
+            switch (toneRand)
             {
-                if (n.NoteTone == Tone.REST)
-                    Thread.Sleep((int)n.NoteDuration);
-                else
-                    Console.Beep((int)n.NoteTone, (int)n.NoteDuration);
+                case 0: tone = Tone.REST; break;
+                case 1: tone = Tone.GbelowC; break;
+                case 2: tone = Tone.GbelowC; break;
+                case 3: tone = Tone.A; break;
+                case 4: tone = Tone.Asharp; break;
+                case 5: tone = Tone.B; break;
+                case 6: tone = Tone.C; break;
+                case 7: tone = Tone.Csharp; break;
+                case 8: tone = Tone.D; break;
+                case 9: tone = Tone.Dsharp; break;
+                case 10: tone = Tone.E; break;
+                case 11: tone = Tone.F; break;
+                case 12: tone = Tone.Fsharp; break;
+                case 13: tone = Tone.G; break;
+                case 14: tone = Tone.Gsharp; break;
             }
+
+            return tone;
         }
 
-        // Define the frequencies of notes in an octave, as well as  
-        // silence (rest). 
-        protected enum Tone
+        /// <summary>
+        /// Gets a random Duration. All Durations are equally likely to be returned.
+        /// </summary>
+        public Duration GetRandomDuration()
         {
-            REST = 0,
-            GbelowC = 196,
-            A = 220,
-            Asharp = 233,
-            B = 247,
-            C = 262,
-            Csharp = 277,
-            D = 294,
-            Dsharp = 311,
-            E = 330,
-            F = 349,
-            Fsharp = 370,
-            G = 392,
-            Gsharp = 415,
+            int durationRand = rand.Next(0, 4);
+            Duration duration = Duration.WHOLE;
+            switch (durationRand)
+            {
+                case 0: duration = Duration.WHOLE; break;
+                case 1: duration = Duration.HALF; break;
+                case 2: duration = Duration.QUARTER; break;
+                case 3: duration = Duration.EIGHTH; break;
+                case 4: duration = Duration.SIXTEENTH; break;
+            }
+
+            return duration;
         }
 
-        // Define the duration of a note in units of milliseconds. 
-        protected enum Duration
+        /// <summary>
+        /// Gets a random Note. All Durations and Tones are equally likely to be used.
+        /// </summary>
+        public Note GetRandomNote()
         {
-            WHOLE = 1600,
-            HALF = WHOLE / 2,
-            QUARTER = HALF / 2,
-            EIGHTH = QUARTER / 2,
-            SIXTEENTH = EIGHTH / 2,
+            Tone tone = GetRandomTone();
+            Duration duration = GetRandomDuration();
+            Note note = new Note(tone, duration);
+            return note;
         }
-
-        // Define a note as a frequency (tone) and the amount of  
-        // time (duration) the note plays. 
-        
     }
-    /*
-    This example produces the following results:
-
-    This example plays the first few notes of "Mary Had A Little Lamb" 
-    through the console speaker.
-    */
-
 }
 
